@@ -1,0 +1,181 @@
+/* Full App Background */
+.weather-app {
+  background-image: url('../../public/assets/hearder.jpg'); 
+  min-height: 100vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Stay fixed when scrolling */
+  color: #fff;
+  display: flex; /* Align content horizontally */
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the top */
+  align-items: center; /* Center horizontally */
+  padding-top: 20px; /* Add spacing from the top */
+}
+
+/* Footer Section */
+footer {
+  background-image: url('../../public/assets/hearder.jpg'); /* Use the same image as the header */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes it fixed when scrolling */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Header Section */
+header {
+  background-image: url('../../public/assets/hearder.jpg'); /* Background image for header */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+header img {
+  width: 60px; /* Adjust size of the logo */
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+header .title-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between logo and text */
+}
+
+/* Main Weather Container */
+.weather-container {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  color: #333; /* Text color for readability */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative; /* Relative to position dropdown correctly */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 20px auto; /* Center it horizontally */
+  width: 100%; /* Full width to align with the weather container */
+}
+
+.city-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #4682b4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Dropdown for City Recommendations */
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  width: 32%; /* Matches the width of the input field */
+  left: 34%; /* Aligns with the input's left padding */
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 5px;
+}
+
+/* Individual Dropdown Item */
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+/* Weather Details Section */
+.weather-details {
+  margin-top: 20px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Additional Weather Information */
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.info-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
